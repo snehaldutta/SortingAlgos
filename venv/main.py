@@ -37,7 +37,7 @@ def run_quicksort(fn, ms):
 
 times = 100
 
-print("size insertion quicksort heapsort radixsort  insertion_sorted quicksort_sorted heapsort_sorted radixsort_sorted")
+print("size insertion quicksort heapsort radixsort insertion_sorted quicksort_sorted heapsort_sorted radixsort_sorted")
 for power in [10 ** i for i in range(4)]:
     for d in range(1, 10):
         size = d * power
@@ -79,4 +79,3 @@ for power in [10 ** i for i in range(4)]:
             heap_sorted / times,
             radix_sorted / times
         )
-# print(f"Insertion {insert / times}, Quicksort {quick / times}, Heapsort {heap / times}, Radixsort {radix / times}")
