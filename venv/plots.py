@@ -10,11 +10,17 @@ df_new[["insertion_sorted","quicksort_sorted","heapsort_sorted","radixsort_sorte
 plt.savefig("plt2.png")
 
 
-small = df_new[18:]
+large = df_new[18:]
 
-small[["quicksort","heapsort","radixsort"]].plot(linewidth=4)
+large[["quicksort","heapsort","radixsort"]].plot(linewidth=4)
 plt.savefig("plt3.png")
-small[["quicksort_sorted","heapsort_sorted","radixsort_sorted"]].plot(linewidth=4)
+large[["quicksort_sorted","heapsort_sorted","radixsort_sorted"]].plot(linewidth=4)
 plt.savefig("plt4.png")
 
+small = df_new[:18]
+
+small[["insertion","quicksort","heapsort","radixsort"]].plot(linewidth=4)
+plt.savefig("plt5.png")
+small[["insertion_sorted","quicksort_sorted","heapsort_sorted","radixsort_sorted"]].plot(linewidth=4)
+plt.savefig("plt6.png")
 
